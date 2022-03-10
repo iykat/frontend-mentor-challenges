@@ -62,7 +62,7 @@ h2 {
     grid-template-columns: repeat(6, 8.5rem);
     grid-template-rows: repeat(4, 6rem);
     width: fit-content;
-   margin: 3rem auto;
+    margin: 3rem auto;
     grid-gap: 2rem;
    
 
