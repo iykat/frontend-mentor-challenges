@@ -1,0 +1,108 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturaed-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container img.hero {
+    width: 100%;
+}
+
+.bg-image {
+    background: url("./images/pattern-background-desktop.svg") no-repeat center/cover;
+    height: 50vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1 ;
+}
+
+
+body {
+    background-color: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--desaturaed-blue);
+}
+
+.container {
+    background: white;
+    margin: 2rem;
+    padding: 1rem;
+    width: 20rem;
+}
+
+.container .pricing {
+    margin: 1rem 0;
+}
+
+button {
+    font-family: inherit;
+}
+
+.btn {
+    border: none;
+    padding: 0.4rem 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-change {
+    background-color: transparent;
+    color: var(--bright-blue);
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: var(--bright-blue);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--desaturaed-blue);
+}
+
+.btn-primary:hover, .btn-change:hover {
+    opacity: 0.9;
+}
+.btn-secondary:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+
+/* attribution */
+.attribution { font-size: 11px; text-align: center; }
+    
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-height: 768px) {
+    .bg-image {
+        background: url("./images/pattern-background-mobile.svg") no-repeat center/cover;
+        height: 400px;
+    }
+}
